@@ -3,12 +3,13 @@ import TimeLineItem from "./TimeLineItem"
 
 class TimeLine extends Component {
     render() {
-        const {resume} = this.props.resume;
+        console.log(this.props)
+        const resume = this.props.resume;
         return (
             <div>
                 <div className="timeline">
                     <ul>
-                        {resume.map(item=>(<TimeLineItem resume = {item}></TimeLineItem>))}
+                        {resume.map(item=>(<TimeLineItem resume = {item} key={item.title}></TimeLineItem>))}
                     </ul>
                 </div>
             </div>
