@@ -24,7 +24,7 @@ body {
   position: absolute;
   left: 50%;
   width: 2px;
-  height: 100%;
+  height: 90%;
   background: #c5c5c5;
 }
 
@@ -136,7 +136,7 @@ body {
   padding: 0 150px;
 }
 .resume {
-  background: url(../img/coast.jpg);
+  /* background: url(../img/coast.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
   padding: 1px;
@@ -236,6 +236,11 @@ body {
   font-size: 18px;
   letter-spacing: 2px;
   line-height: 1.5;
+}
+
+.intro-prief .En {
+  font-size: 15px;
+  /* font-weight: bold; */
 }
 
 .intro-prief .shame-issue {

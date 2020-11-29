@@ -22,10 +22,17 @@ class App extends Component {
                                     
                                 </div>
                                 <div className="sidetation">
-                                    擁有一台相機的小前端。
+                                    擁有一台相機的前端工程師。
                                 </div> 
                                 <div className="intro-prief">
-                                      80後，生在影像和資訊爆炸年代，遊走在電影幕後與前端開發間的Web開發者，曾經想看遍世上每一部好電影，並參與每部精采的國片拍攝，<span className="shame-issue">無奈閃到腰，</span>現在的目標是成為一位有台相機且稱職的<span className="web-dev">Web Developer</span>。
+                                    <span className="En">
+                                       1+ Years of Front-end Developer<br/>
+                                        Focus on :<br/>
+                                        JavaScript (Framework such as AngularJS、React、Vue )<br/>
+                                        CSS ( SASS、Styled-Component )<br/>
+                                        HTML ( JSX )<br/>
+                                        Git<br/> 
+                                    </span>
                                 </div>
                             </div>
                         </div>

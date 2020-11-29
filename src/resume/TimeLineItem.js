@@ -7,7 +7,7 @@ class TimeLineItem extends Component {
             <li>
                 <div className="content">
                     <h3>{title}</h3>
-                    <p>{descpt}</p>
+                    {descpt.map(item=>(<p key={item}>{item}</p>))}
                 </div>
                 <div className="time">
                     <h4>{date}</h4>
