@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "35fb84a969b51db5867fded7843a1499",
+    "revision": "bbb65a1dc7093ceb91e189e8d49281c2",
     "url": "/resume_page/index.html"
   },
   {
-    "revision": "536fc421b6a7f6685af2",
-    "url": "/resume_page/static/css/main.d5683e46.chunk.css"
+    "revision": "2c22668e28e0814f0104",
+    "url": "/resume_page/static/css/main.596277ba.chunk.css"
   },
   {
     "revision": "bd880dcea77c6eae9668",
@@ -16,16 +16,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/resume_page/static/js/2.d1c69d69.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "536fc421b6a7f6685af2",
-    "url": "/resume_page/static/js/main.8577e1af.chunk.js"
+    "revision": "2c22668e28e0814f0104",
+    "url": "/resume_page/static/js/main.33fc5659.chunk.js"
   },
   {
     "revision": "7957fe74122225020874",
     "url": "/resume_page/static/js/runtime-main.928bfb3a.js"
-  },
-  {
-    "revision": "65e1b62a00f08a7869bfce5c9c8e96ec",
-    "url": "/resume_page/static/media/coast.65e1b62a.jpg"
   },
   {
     "revision": "f5f10a322899acbe178c25fdd374acd6",
