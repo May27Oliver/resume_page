@@ -3,7 +3,6 @@ import TimeLineItem from "./TimeLineItem"
 
 class TimeLine extends Component {
     render() {
-        console.log(this.props)
         const resume = this.props.resume;
         return (
             <div>

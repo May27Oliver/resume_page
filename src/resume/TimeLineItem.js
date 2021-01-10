@@ -5,13 +5,14 @@ class TimeLineItem extends Component {
         const {title,descpt,year,date} = this.props.resume
         return (
             <li>
+                <div className="time">
+                    <h4>{date}</h4>
+                </div>
                 <div className="content">
                     <h3>{title}</h3>
                     {descpt.map(item=>(<p key={item}>{item}</p>))}
                 </div>
-                <div className="time">
-                    <h4>{date}</h4>
-                </div>
+                
             </li>
         );
     }

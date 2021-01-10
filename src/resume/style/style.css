@@ -11,6 +11,76 @@ body {
   font-family: "Montserrat", sans-serif, "Noto Sans TC", sans-serif;
 }
 
+.protrait {
+  position: relative;
+}
+
+.self-protrait-zone {
+  display: block;
+}
+
+.about-me {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  font-size: 180px;
+  color: hsl(60, 30%, 96%);
+  z-index: 1;
+}
+
+.self-protrait {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: url(/resume_page/static/media/protrait.f5f10a32.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: 2;
+}
+
+.self-portrait-box {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background: #17a2b8;
+}
+
+.tw-name {
+  font-size: 40px;
+  font-weight: 900;
+  color: #054852;
+  text-align: center;
+}
+.en-name {
+  color: #ccc;
+  display: block;
+}
+
+.sidetation {
+  line-height: 40px;
+  color: #888;
+  margin: 0 0 0 10px;
+  text-align: center;
+}
+
+.intro-prief {
+  display: flex;
+  justify-content: center;
+}
+
+.intro-prief .En {
+  width: 80%;
+}
+
+/* 履歷部分 */
 .timeline {
   flex: 1;
   position: relative;
@@ -22,7 +92,7 @@ body {
   /*直接用最外層的div做軸線*/
   content: "";
   position: absolute;
-  left: 50%;
+  left: 20px;
   width: 2px;
   height: 90%;
   background: #c5c5c5;
@@ -37,42 +107,36 @@ body {
   list-style: none;
   line-height: normal;
   position: relative;
-  width: 50%;
+  /* width: 50%; */
   padding: 20px 40px;
   box-sizing: border-box;
 }
-.timeline ul li:nth-child(odd) {
-  margin-left: 50%;
+
+.timeline ul li {
+  margin-left: 15px;
 }
 
-.timeline ul li:nth-child(even) {
-  text-align: right;
+.timeline ul li {
+  text-align: left;
 }
+
 .timeline ul li:before {
   content: "";
   position: absolute;
+  top: 25px;
+  left: 0;
   width: 10px;
   height: 10px;
-  background: rgba(233, 33, 99, 1);
+  background: #248796;
   border-radius: 50%;
-  box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
-}
-
-.timeline ul li:nth-child(odd):before {
-  top: 24px;
-  left: -4px;
-}
-
-.timeline ul li:nth-child(even):before {
-  top: 24px;
-  right: -6px;
+  box-shadow: 0 0 0 3px #17a2b8;
 }
 
 .timeline ul li h3 {
   margin: 0;
   padding: 0;
   font-weight: 600;
-  color: rgba(233, 33, 99, 1);
+  color: #165059;
 }
 
 .timeline ul li p {
@@ -89,28 +153,17 @@ body {
   font-size: 14px;
 }
 
-.timeline ul li:nth-child(odd) .time {
-  position: absolute;
-  top: 10px;
-  left: -165px;
-  margin: 0;
+.timeline ul li .time {
+  width: 120px;
+  position: relative;
+  top: -15px;
+  left: -5px;
+  margin: 10px;
   padding: 8px 16px;
-  background: rgba(233, 33, 99, 1);
+  background: #248796;
   color: #fff;
   border-radius: 18px;
-  box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.3);
-}
-
-.timeline ul li:nth-child(even) .time {
-  position: absolute;
-  top: 10px;
-  right: -180px;
-  margin: 0;
-  padding: 8px 16px;
-  background: rgba(233, 33, 99, 1);
-  color: #fff;
-  border-radius: 18px;
-  box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.3);
+  box-shadow: 0 0 0 3px #17a2b8;
 }
 
 /* 標題 */
@@ -123,7 +176,7 @@ body {
   text-align: center;
   font-size: 50px;
   display: flex;
-  color: #ab3b3a;
+  color: #054852;
 }
 
 .column-title .title {
@@ -131,136 +184,224 @@ body {
   font-size: 40px;
 }
 
-/* 內容容器 */
-.wrap {
-  padding: 0 150px;
-}
-.resume {
-  /* background: url(../img/coast.jpg); */
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 1px;
-}
+@media all and (min-width: 768px) {
+  .timeline:before {
+    /*不動*/
+    left: 50%;
+  }
+  .timeline ul li:nth-child(odd) {
+    margin-left: 50%;
+  }
 
-.ex-resume {
-  padding: 1px;
-  background: #fff8f8;
-  /* background-size: contain;
-  background-repeat: no-repeat;
-  padding: 1px; */
-}
+  .timeline ul li:nth-child(even) {
+    text-align: right;
+    width: 50%;
+  }
+  /*  */
+  .timeline ul li:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgba(233, 33, 99, 1);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+  }
 
-.ex-resume .column-title .title {
-  color: #ab3b3a;
-}
+  .timeline ul li h3 {
+    color: #ab3b3a;
+  }
 
-.protrait {
-  position: relative;
-  width: 100%;
-  height: 450px;
-}
+  .timeline ul li:nth-child(odd):before {
+    top: 24px;
+    left: -4px;
+  }
 
-.motto {
-  flex: 1;
-  /* background: #4a593d; */
-}
+  .timeline ul li:nth-child(even):before {
+    top: 24px;
+    right: 9px;
+    left: auto;
+  }
 
-.self-portrait-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: 1;
-}
+  .timeline ul li:nth-child(odd) .time {
+    width: auto;
+    position: absolute;
+    top: 10px;
+    left: -165px;
+    margin: 0;
+    padding: 8px 16px;
+    background: rgba(233, 33, 99, 1);
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.3);
+  }
 
-.self-protrait-zone {
-  display: flex;
-  flex: 1;
-  width: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  /* background: url(../img/wallpaper.jpg); */
-}
+  .timeline ul li:nth-child(even) .time {
+    width: auto;
+    position: absolute;
+    top: 10px;
+    right: -180px;
+    left: auto;
+    margin: 0;
+    padding: 8px 16px;
+    background: rgba(233, 33, 99, 1);
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.3);
+  }
+  /* 
+  標題
+  .title {
+    font-size: 40px;
+    font-weight: 900;
+  }
+  .column-title {
+    margin: 50px 0;
+    text-align: center;
+    font-size: 50px;
+    display: flex;
+    color: #ab3b3a;
+  }
 
-.self-protrait {
-  margin-left: 0;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  background: url(../img/protrait.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
+  .column-title .title {
+    width: 100%;
+    font-size: 40px;
+  } */
 
-.motto {
-  position: relative;
-}
+  /* 內容容器 */
+  .wrap {
+    padding: 0 150px;
+  }
+  .resume {
+    /* background: url(../img/coast.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1px;
+  }
 
-.id-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: 1;
-  width: 50%;
-  color: #111111;
-}
+  .ex-resume {
+    padding: 1px;
+    background: #fff8f8;
+    /* background-size: contain;
+    background-repeat: no-repeat;
+    padding: 1px; */
+  }
 
-.sidetation {
-  line-height: 40px;
-  color: #888;
-  margin: 0 0 0 10px;
-}
-.about-me {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  font-weight: bold;
-  font-size: 200px;
-  color: #f8f8f2;
-}
-/* 名字 */
-.tw-name {
-  font-size: 40px;
-  font-weight: 900;
-  color: #666666;
-}
+  .ex-resume .column-title .title {
+    color: #ab3b3a;
+  }
 
-.en-name {
-  color: #ccc;
-}
+  .protrait {
+    position: relative;
+    width: 100%;
+    height: 450px;
+  }
 
-.intro-prief {
-  font-size: 18px;
-  letter-spacing: 2px;
-  line-height: 1.5;
-}
+  .motto {
+    flex: 1;
+    /* background: #4a593d; */
+  }
 
-.intro-prief .En {
-  font-size: 15px;
-  /* font-weight: bold; */
-}
+  .self-portrait-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: transparent;
+    flex: 1;
+  }
 
-.intro-prief .shame-issue {
-  color: #ab3b3a;
-  font-weight: 600;
-  text-decoration: line-through;
-}
+  .self-protrait-zone {
+    display: flex;
+    flex: 1;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    /* background: url(../img/wallpaper.jpg); */
+  }
 
-.web-dev {
-  font-weight: 600;
-  color: #ffc408;
-}
+  .self-protrait {
+    margin-left: 0;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: url(../img/protrait.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 
-.education {
-}
-.education .title {
-  width: 100%;
-  font-size: 40px;
-}
+  .motto {
+    position: relative;
+  }
 
-.education .en-name {
-  font-size: 30px;
+  .id-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    width: 50%;
+    color: #111111;
+  }
+
+  .sidetation {
+    line-height: 40px;
+    color: #888;
+    margin: 0 0 0 10px;
+  }
+  .about-me {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: bold;
+    font-size: 200px;
+    color: #f8f8f2;
+  }
+  /* 名字 */
+  .tw-name {
+    font-size: 40px;
+    font-weight: 900;
+    color: #666666;
+  }
+
+  .en-name {
+    display: inline;
+    color: #ccc;
+  }
+
+  .intro-prief {
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+  }
+
+  .intro-prief .En {
+    font-size: 15px;
+    /* font-weight: bold; */
+  }
+
+  .intro-prief .shame-issue {
+    color: #ab3b3a;
+    font-weight: 600;
+    text-decoration: line-through;
+  }
+
+  .web-dev {
+    font-weight: 600;
+    color: #ffc408;
+  }
+
+  .education {
+  }
+  .education .title {
+    width: 100%;
+    font-size: 40px;
+    color: #ab3b3a;
+  }
+
+  .education .en-name {
+    font-size: 30px;
+  }
 }

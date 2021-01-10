@@ -31,7 +31,9 @@ class App extends Component {
                                         JavaScript (Framework such as AngularJS、React、Vue )<br/>
                                         CSS ( SASS、Styled-Component )<br/>
                                         HTML ( JSX )<br/>
-                                        Git<br/> 
+                                        Git<br/>
+                                        <br/>
+                                        E-mail:oliver310338@hotmail.com 
                                     </span>
                                 </div>
                             </div>
