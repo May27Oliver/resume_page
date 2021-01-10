@@ -184,6 +184,27 @@ body {
   font-size: 40px;
 }
 
+.copied-email {
+  cursor: pointer;
+}
+
+#myEmailAddress {
+  border: none;
+  outline: none;
+  width: 100%;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif, "Noto Sans TC", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+#myEmailAddress:focus {
+  padding: 5px;
+  background: #666666;
+  color: #fff;
+  border-radius: 5px;
+}
+
 @media all and (min-width: 768px) {
   .timeline:before {
     /*不動*/

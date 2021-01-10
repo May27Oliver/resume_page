@@ -1,9 +1,18 @@
-import React, { Component,Fragment } from 'react';
+import React, { Component,Fragment,createRef } from 'react';
 import resume from "./resum.json" 
 import TimeLine from './TimeLine'
 import './style/style.css'
 
 class App extends Component {
+    constructor(props){
+        super(props);
+        this.myAddress=createRef();
+    }
+    copiedEmail=(e)=>{
+        let address = document.getElementById('myEmailAddress');
+        address.select();
+        document.execCommand("Copy");
+    }
     render() {
         return (
             <Fragment>
@@ -33,7 +42,7 @@ class App extends Component {
                                         HTML ( JSX )<br/>
                                         Git<br/>
                                         <br/>
-                                        E-mail:oliver310338@hotmail.com 
+                                        E-mail: (click it will copy!) <input id='myEmailAddress' onClick={this.copiedEmail} value="oliver310338@hotmail.com" readonly="true"></input>
                                     </span>
                                 </div>
                             </div>
