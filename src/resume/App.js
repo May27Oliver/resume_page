@@ -32,11 +32,13 @@ class App extends Component {
                 <div className="sidetation">擁有一台相機的前端工程師。</div>
                 <div className="intro-prief">
                   <span className="En">
-                    2+ Years of Front-end Developer
+                    3+ Years of Front-end Developer
                     <br />
                     Focus on :<br />
-                    JavaScript (Framework such as AngularJS、React、Vue )<br />
-                    CSS ( SASS、Styled-Component )<br />
+                    JavaScript (Framework such as React、AngularJS、Vue )<br />
+                    Typescript
+                    <br />
+                    CSS ( Tailwind css、SASS、Styled-Component )<br />
                     HTML ( JSX )<br />
                     Git
                     <br />

@@ -1678,6 +1678,13 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-fontawesome@^1.6.5":
+  version "1.6.5"
+  resolved "https://registry.yarnpkg.com/@types/react-fontawesome/-/react-fontawesome-1.6.5.tgz#a5102b086613cf6d6c9ce944e9fb1eee604635b6"
+  integrity sha512-O75ViR81klU7TfVt4TAdEOWzzEf58RM8PVQHUmKsHjhDt/WLMcb+h/k5XxHUv9iYAKI5u81IoMJ20wC+QLe3Dw==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react@*":
   version "16.9.52"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.52.tgz#c46c72d1a1d8d9d666f4dd2066c0e22600ccfde1"
