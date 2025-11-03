@@ -39,7 +39,7 @@ body {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  background: url(/resume_page/static/media/protrait.f5f10a32.jpg);
+  background: url(../img/protrait.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

@@ -29,13 +29,14 @@ class App extends Component {
                     陳韋齊<label className="en-name"> Oliver Chen</label>
                   </h2>
                 </div>
-                <div className="sidetation">擁有一台相機的前端工程師。</div>
+                <div className="sidetation">擁有一台相機的網頁開發工程師。</div>
                 <div className="intro-prief">
                   <span className="En">
-                    3+ Years of Front-end Developer
+                    5+ Years of Web Developer
                     <br />
                     Focus on :<br />
-                    JavaScript (Framework such as React、AngularJS、Vue )<br />
+                    Ruby on Rails Backend Development<br />
+                    JavaScript (Framework such as React)<br />
                     Typescript
                     <br />
                     CSS ( Tailwind css、SASS、Styled-Component )<br />
@@ -47,7 +48,7 @@ class App extends Component {
                     <input
                       id="myEmailAddress"
                       onClick={this.copiedEmail}
-                      value="oliver310338@hotmail.com"
+                      value="oliverskychen@gmail.com"
                       readonly="true"
                     ></input>
                   </span>
