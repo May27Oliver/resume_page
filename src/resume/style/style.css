@@ -206,7 +206,21 @@ body {
   border-radius: 5px;
 }
 
-@media all and (min-width: 768px) {
+@media all and (max-width: 1200px) {
+  .tw-name {
+    font-size: 30px;
+    z-index: 10;
+  }
+  .en-name {
+    font-size: 20px;
+    z-index: 10;
+  }
+  .intro-prief .En {
+    width: 90%;
+    z-index: 10;
+  }
+}
+@media all and (min-width: 1105px) {
   .timeline:before {
     /*不動*/
     left: 50%;
