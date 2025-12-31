@@ -441,3 +441,71 @@ body {
     font-size: 30px;
   }
 }
+
+/* Mobile RWD Strategy */
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .about-me {
+    font-size: 80px; /* Reduced to fit mobile screens */
+    top: 50px;
+    left: -10px;
+  }
+
+  .self-portrait-box {
+    height: 400px; /* Reduced height */
+  }
+
+  .self-protrait {
+    width: 200px;
+    height: 200px;
+  }
+
+  .tw-name {
+    font-size: 32px;
+  }
+
+  .en-name {
+    font-size: 20px;
+  }
+
+  .intro-prief .En {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .timeline:before {
+    left: 10px;
+  }
+
+  .timeline ul li {
+    padding: 20px 15px 20px 30px; /* Reduce padding */
+    margin-left: 5px;
+  }
+  
+  .timeline ul li:before {
+    left: -5px; /* Adjust dot position */
+  }
+
+  .timeline ul li .time {
+    width: auto;
+    display: inline-block;
+  }
+  
+  .column-title {
+    font-size: 35px;
+    margin: 30px 0;
+  }
+  
+  .column-title .title {
+    font-size: 30px;
+  }
+  
+  /* Improve input field on mobile */
+  #myEmailAddress {
+    font-size: 14px;
+    width: 100%;
+  }
+}
