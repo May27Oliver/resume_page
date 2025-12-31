@@ -475,24 +475,6 @@ body {
     width: 90%;
     font-size: 14px;
   }
-
-  .timeline:before {
-    left: 10px;
-  }
-
-  .timeline ul li {
-    padding: 20px 15px 20px 30px; /* Reduce padding */
-    margin-left: 5px;
-  }
-  
-  .timeline ul li:before {
-    left: -5px; /* Adjust dot position */
-  }
-
-  .timeline ul li .time {
-    width: auto;
-    display: inline-block;
-  }
   
   .column-title {
     font-size: 35px;
